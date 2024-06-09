@@ -1,0 +1,456 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <title>Job Portal</title>
+</head>
+<body> 
+    <!-- navbar -->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JOBGURU</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Compaines</a>
+            <a href="#testimonial_area">Testimonial</a>
+            <a href="#blog">Blog</a>
+            <a href="#">Sign In</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!-- header -->
+    <header>
+        <h1 class="header-title">
+            THERE IS A WAY TO DO IT BETTER… <br> <span>FIND IT</span>
+        </h1>
+    </header>
+
+    <!-- search -->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="Job title or keywords">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- filter box -->
+    <div class="fliter-box">
+        <div class="filter-dropdown">
+            <select class="filter-select" id="job-level" namw="job-level">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-Senior</option>
+                <option>Director</option>
+            </select>
+            <select class="filter-select" id="job-function" name="job-function">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Education</option>
+            </select>   
+            <select class="filter-select" id="employment" name="employment">
+                <option>Employement Type</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class="filter-select" id="location" name="location">
+                <option>Location</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>UK</option>
+            </select>
+            <select class="filter-select" id="education" name="education">
+                <option>Education</option>
+                <option>High School</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+    <!-- job listing -->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/tesla-motors.svg">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/ebay.svg">
+                <div class="job-detail">
+                    <h4>Ebay</h4>
+                    <h3>Bussiness Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/tiktok-icon.svg">
+                <div class="job-detail">
+                    <h4>Tiktok</h4>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 5 min ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/youtube.svg">
+                <div class="job-detail">
+                    <h4>Youtube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="images/amazon.svg">
+                <div class="job-detail">
+                    <h4>Amazon</h4>
+                    <h3>Software Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+        <button class="job-more">More List</button>
+    </section>
+
+    <!-- join -->
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">LETS START YOUR NEW JOB WITH US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam in suscipit at atque reprehenderit esse quasi accusantium.</p>
+        </div>
+        <button class="join-button">Join Now</button>
+    </section>
+
+    <!-- feature company -->
+    <section class="featured" id="companies">
+        <h1 class="section-title">Featured Companies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis eum preferendis,nemo distinctio reiciendis eveniet.</p>
+        <div class="featured-wrapper">
+            <div class="featured-card">
+                <img class="featured-image" src="images/ebay.svg">
+                <p>Ebay</p>
+                <button class="featured-button">View 2 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/youtube.svg">
+                <p>Youtube</p>
+                <button class="featured-button">View 1 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/tiktok-icon.svg">
+                <p>Tiktok</p>
+                <button class="featured-button">View 3 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/tesla-motors.svg">
+                <p>Tesla</p>
+                <button class="featured-button">View 2 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/google.svg">
+                <p>Google</p>
+                <button class="featured-button">View 2 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/facebook.svg">
+                <p>Facebook</p>
+                <button class="featured-button">View 1 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/apple.svg">
+                <p>Apple</p>
+                <button class="featured-button">View 4 jobs</button>            
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="images/amazon.svg">
+                <p>Amazon</p>
+                <button class="featured-button">View 3 jobs</button>            
+            </div>
+        </div>
+    </section>
+    <!-- testimoni -->
+    <section1 id="testimonial_area" class="section_padding">
+        <h1 class="section-title1">Testimonial</h1>
+        <div class="border"></div>
+        <h3>Lets see what our clients say about us:</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testmonial_slider_area text-center owl-carousel">
+                        <div class="box-area">	
+                            <div class="img-area">
+                                <img src="images/profile-1.jpg" alt="">
+                            </div>	
+                            <h5>James William</h5>
+                            <span>Business Development</span>									
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div> 
+                    
+                        <div class="box-area">	
+                            <div class="img-area">
+                                <img src="images/profile-2.jpeg" alt="">
+                            </div>	
+                            <h5>Olivia</h5>
+                            <span>Data Analyst</span>									
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div> 
+                    
+                        <div class="box-area">	
+                            <div class="img-area">
+                                <img src="images/Profile-3.jpg" alt="">
+                            </div>	
+                            <h5>Rahul Dev</h5>
+                            <span>Logistic Director</span>									
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div> 
+                    
+                        <div class="box-area">	
+                            <div class="img-area">
+                                <img src="images/profile-4.jpeg" alt="">
+                            </div>	
+                            <h5>Sophia</h5>
+                            <span>Marketing Officer</span>									
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div> 
+                    
+                        <div class="box-area">	
+                            <div class="img-area">
+                                <img src="images/profile-5.jpeg" alt="">
+                            </div>	
+                            <h5>Jenni</h5>
+                            <span>Web Designer</span>									
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div> 
+                    
+                        <div class="box-area">	
+                            <div class="img-area">
+                                <img src="images/profile-6.jpeg" alt="">
+                            </div>	
+                            <h5>Nani</h5>
+                            <span>Full Stack Developer</span>									
+                            <p class="content">
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
+                                ever since
+                            </p>
+                            <h6 class="socials">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                            </h6>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section1>
+<!-- blog -->
+    <section class="blog" id="blog">
+        <h1 class="section-title">Career Advicer</h1>
+        <p>Learn more career tips from company's recruiter</p>
+        <div class="blog-wrapper">
+            <div class="blog-card">
+                <img class="blog-image" src="images/blog-1.jpeg">
+                <div class="blog-details">
+                    <span>23 jan 2022</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read more</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img class="blog-image" src="images/blog-2.jpg">
+                <div class="blog-details">
+                    <span>28 jan 2022</span>
+                    <h4>10 Tips for technical interview</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read more</a>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img class="blog-image" src="images/blog-3.jpg">
+                <div class="blog-details">
+                    <span>3 mar 2022</span>
+                    <h4>Managing Time Effectively</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <h3>JOBGURU</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aspernatur, possimus quo quam eum cumque officia quas earum fugit.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Explore</h4>
+            <a href="#">Top Companies</a>
+            <a href="#">Terms of Services</a>
+            <a href="#">Podcast</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>About</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Get Inspired</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Support</h4>
+            <a href="#">Customer Services</a>
+            <a href="#">Trust & Safety</a>
+            <a href="#">Partnership</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Community</h4>
+            <a href="#">Community</a>
+            <a href="#">Invite a Friend</a>
+            <a href="#">Event</a>
+        </div>
+     </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
